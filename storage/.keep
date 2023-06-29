@@ -1,0 +1,6 @@
+require 'faker'
+
+50.times do
+  team = WorldCupTeam.create(name: Faker::Sports::Football.unique.team)
+  puts team.name
+end
